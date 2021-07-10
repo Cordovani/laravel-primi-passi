@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('homepage',[
+        "name"=>"lorenzo",
+        "surname"=>"cordovani",
+        "awesome"=>"Boolean",
+    ]);
     // return 'My homepage';
 });
 
