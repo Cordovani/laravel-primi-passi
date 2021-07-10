@@ -20,5 +20,17 @@ Route::get('/', function () {
         "awesome"=>"Boolean",
     ]);
     // return 'My homepage';
-});
+})->name('homepage');
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+// Route::get('/homepage', function () {
+//     return view('homepage');
+// })->name('homepage');
+// non si può riutilizzare se è la root
+
+Route::get('/private', function () {
+    return view('private');
+})->name('private');
